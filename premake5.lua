@@ -2,7 +2,7 @@ project "ImGui"
     kind "StaticLib"
     language "C++"
     cppdialect "C++17"
-    staticruntime "On"
+    staticruntime "off"
 
     targetdir ("bin/%{cfg.buildcfg}")
     objdir ("bin-int/%{cfg.buildcfg}")
@@ -14,7 +14,8 @@ project "ImGui"
         "*.h",
         "*.cpp",
         "backends/imgui_impl_glfw.*",
-        "backends/imgui_impl_opengl3.*"
+        "backends/imgui_impl_opengl3.*",
+        "misc/cpp/imgui_stdlib.*"
     }
 
     includedirs
