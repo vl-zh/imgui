@@ -9,6 +9,9 @@ project "ImGui"
 
     flags {"MultiProcessorCompile"}
 
+    optimize "Full"
+    warnings "Off"
+
     files
     {
         "*.h",

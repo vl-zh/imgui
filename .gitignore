@@ -13,6 +13,7 @@ examples/*/Release/*
 examples/*/x64/*
 bin/
 bin-int/
+IMGUI.zip
 
 ## Visual Studio artifacts
 .vs
