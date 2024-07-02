@@ -12,6 +12,16 @@ project "ImGui"
     optimize "Full"
     warnings "Off"
 
+    -- Remap Configurations to avoid rebuilding
+    configmap {
+        ["Debug_DLL"] = "Release_DLL",
+        ["Dist_DLL"] = "Release_DLL",
+        ["None"] = "Release_DLL",
+        ["Omniverse"] = "Release_DLL",
+        ["Rhino"] = "Release_DLL",
+        ["Both"] = "Release_DLL",
+    }
+
     -- Redefine to keep paths relative
     ImGuiIncludeDir = prependPath("../", get_viewer_include_dirs())
 
